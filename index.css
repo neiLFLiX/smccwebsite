@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header img {
@@ -20,6 +21,11 @@ header img {
 .smcc {
     margin: auto!important;
     font-weight: bolder;
+    color: yellow;
+}
+
+.smcc p {
+    color: white;
 }
 
 header {
@@ -46,8 +52,19 @@ header {
 }
 
 .about, .hisp{
-    background-color: rgb(4, 4, 103);
+    background-color: rgb(49,49,197);
+    padding: 20px;
+}
+
+.about, .milestone {
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.about table {
     padding: 10px;
+    margin-right: 20px;
 }
 
 .about1 img{
@@ -57,6 +74,11 @@ header {
 
 .hisp a {
     color: rgb(241, 238, 18);
+}
+
+.hisp p {
+    text-align: center;
+    justify-content: center;
 }
 
 .yellowhead {
@@ -85,8 +107,8 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px;
-    margin-top: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 nav a {
@@ -95,7 +117,7 @@ nav a {
 }
 
 nav {
-    height: 40px; /* Set a fixed height for the header */
+    height: 40px;
 }
 
 nav ul {
@@ -110,16 +132,27 @@ nav ul ul {
 }
 
 nav ul li {
-    float: left;
+    float: center;
     position: relative;
 }
 
 nav ul li:hover > ul {
     display: block; 
-    background-color: rgb(5, 5, 77);
-    width: 200px;
+    background-color: navy;
+    width: 150%;
     background-blend-mode: color;
     
+}
+
+nav ul li:hover > ul li a {
+    display: block;
+    padding: 10px; 
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover > ul li a:hover {
+    background-color: darkblue;
 }
 
 nav a {
@@ -138,14 +171,48 @@ nav ul ul {
 nav ul ul li {
     
     padding: 5px;
-    background-color: rgb(5, 5, 77);
+    background-color: navy;
 }
 
 .courses {
-    background-color: rgb(4, 4, 103);
+    background-color:rgb(49, 49, 197);
 }
 
 .off {
     color: rgb(241, 238, 18);
     padding-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contacts img {
+    height: 50px;
+    width: 50px;
+}
+
+.loca {
+    height: 250px;
+    width: 200px;
+}
+
+footer {
+    border-radius: 10px;
+    background-color: navy;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    color: wheat;
+}
+
+.list {
+    color:wheat
 }
