@@ -18,13 +18,21 @@ header img {
     width: 40px;
 }
 
-.smcc {
-    margin: auto!important;
-    font-weight: bolder;
+.school-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.school-logo img {
+    margin-right: 10px;
+}
+
+.school-logo h3 {
     color: yellow;
 }
 
-.smcc p {
+.school-logo p {
     color: white;
 }
 
